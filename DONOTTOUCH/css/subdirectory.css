@@ -1,0 +1,34 @@
+img {
+    width: 40%;
+}
+
+div {
+    font-family: 'Karla';
+    font-size: 12px;
+}
+
+#overall-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.home-page-folder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
