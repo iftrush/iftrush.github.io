@@ -1,0 +1,180 @@
+/* Hi, thanks for taking the intiative to read through the file.
+   While it may be helpful to understand this file, won't need to make
+   any changes to here. Please follow the directions listed in the
+   comments in style.css. */
+
+
+*{
+    box-sizing:border-box
+}
+html,body{
+    height:100%;
+}
+body{
+    margin:0;
+    display:-webkit-box;
+    font-family:'Lato', 'Times New Roman', Times, serif;
+    height:100%;
+    display: flex;
+}
+h1,h2,h3,h4{
+    margin:0;
+}
+h1{
+    font-weight:400;
+    margin:0;
+    font-size:27px;
+}
+h2{
+    font-size:14.5px;
+    color:#1770ab;
+}
+h3{
+    margin-top:4px;
+    font-size:15px;
+    font-weight:normal;
+    text-transform:uppercase;
+    color:#6c757c
+}
+h4{
+    margin-top:2px;
+    font-size:12px;
+    font-weight:normal;
+    color:#6c757c;
+}
+.nav{
+    background-color:#003262;
+    padding:13px 10px 10px 10px;
+}
+.nav--button{
+    width:100%;
+    padding:10px;
+    text-align:center;
+    font-size:14px;
+    color:#fff;
+}
+.nav--button img{
+    width:75%;
+    margin-bottom:5px;
+}
+.nav--button img:not(#logo){
+    -webkit-filter:invert(100%);
+    filter:invert(100%);
+}
+.nav--button img#logo{
+    margin-bottom:10px;
+    width:100%;
+}
+.nav--button img:hover{
+    cursor:pointer;
+}
+.nav--button a{
+  color: #fff;
+  text-decoration: none;
+}
+.main{
+    display:-webkit-box;
+    display:flex;
+    width:100%;
+}
+.dashboard{
+    width:100%
+}
+.dashboard--title{
+    padding:0 24px 20px 0;
+    margin:0 24px 30px 0;
+    border-bottom:1px solid rgba(0,0,0,0.25);
+}
+.dashboard--title img{
+    width:20px;
+}
+.dashboard--classes__box{
+    border-radius:5px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.3);
+    -webkit-transition:all 0.1s;
+    transition:all 0.1s;
+}
+
+.dashboard--classes__box__image{
+    height:146px;
+    background-color:#1770ab;
+}
+.dashboard--classes__box__description{
+    padding:15px 22.5px;
+}
+.dashboard--classes__box__controls__buttons{
+    margin-top:9px;
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-pack:justify;
+    justify-content:space-between;
+}
+.dashboard--classes__box__controls__buttons img{
+    height:23.5px;
+    -webkit-filter:invert(40%);
+    filter:invert(40%);
+}
+.dashboard--classes__box__controls__buttons img:hover{
+    cursor:pointer;
+}
+.notifications{
+    margin:24px 36px;
+}
+.notifications img{
+    width:100%;
+    padding:4px;
+}
+.notifications__todo--title{
+    padding-bottom:12px;
+    margin-bottom:12px;
+    border-bottom:1px solid rgba(0,0,0,0.25);
+}
+.notifications__todo--title h2{
+    color:#2d3b45;
+    font-size:16px;
+}
+.notifications__notifs .notifications__notifs--box{
+    margin-bottom:16px;
+}
+.notifications__notifs .notifications__notifs--box img{
+    width:30px;
+    margin-right:5px;
+}
+.notifications__notifs .notifications__notifs--box h1{
+    font-weight:300;
+    font-size:14px;
+    color:#1770ab;
+    margin:8px 0 4px 0;
+}
+.notifications__notifs .notifications__notifs--box h2{
+    color:rgba(108,117,124,0.6);
+    font-weight:400;
+}
+.notifications__notifs .notifications__notifs--box h3{
+    text-transform:none;
+    font-size:12px;
+    color:rgba(108,117,124,0.55);
+}
+@media (min-width: 1100px){
+    .dashboard--classes{
+        width:894px;
+    }
+}
+@media (max-width: 1099px){
+    .dashboard--classes{
+        width:90%;
+    }
+}
+@media (min-width: 993px){
+    .notifications{
+        width:288px;
+    }
+}
+@media (max-width: 1099px){
+    .dashboard--classes__box{
+        width:48%;
+    }
+    .notifications{
+        width:30%;
+    }
+}
