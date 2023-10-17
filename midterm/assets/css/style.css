@@ -150,7 +150,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-image: url("/assets/img/centerImg.jpeg");
+    background-image: url("../img/centerImg.jpeg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
