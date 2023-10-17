@@ -1,0 +1,17 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 176.64 177.51">
+  <defs>
+    <clipPath id="clip-path" transform="translate(-19.06 -19.24)">
+      <circle cx="107.5" cy="107.78" r="88.2" transform="translate(-43.75 124.96) rotate(-51.55)" fill="none"/>
+    </clipPath>
+  </defs>
+  <title>basketball</title>
+  <g clip-path="url(#clip-path)">
+    <circle cx="107.5" cy="107.78" r="88.2" transform="translate(-62.82 105.72) rotate(-51.55)" fill="#f58132"/>
+    <rect x="19.3" y="105.78" width="176.39" height="4" transform="translate(-62.81 105.75) rotate(-51.56)" fill="#03344a"/>
+    <path d="M169.11,157.08c-23.1,0-52-5.77-78.86-27.61C56.55,102.05,45.86,68.2,42.83,44.64l4-.51c2.94,22.84,13.3,55.65,46,82.24,32,26,67.12,28.46,90.95,25.93l.42,4A141.89,141.89,0,0,1,169.11,157.08Z" transform="translate(-19.06 -19.24)" fill="#03344a"/>
+    <path d="M94.18,193.56l-4-.11c.65-24.17,8.48-45.63,23.27-63.81a110.17,110.17,0,0,1,80.42-40.89l.21,4a106.21,106.21,0,0,0-77.52,39.42C102.33,149.64,94.8,170.29,94.18,193.56Z" transform="translate(-19.06 -19.24)" fill="#03344a"/>
+    <path d="M28.23,143.93,27.29,140c21.63-5.22,39.61-16.25,53.43-32.79C108.49,74,107,38.29,103.7,20l3.94-.72c2.79,15.32,6,54.8-23.85,90.58C69.41,127,50.72,138.51,28.23,143.93Z" transform="translate(-19.06 -19.24)" fill="#03344a"/>
+    <path d="M192.5,85.86a88.21,88.21,0,0,1-172.11,7.4,88.21,88.21,0,1,0,172.11-7.4Z" transform="translate(-19.06 -19.24)" fill="#7b4220" opacity="0.43"/>
+    <ellipse cx="112.01" cy="49.77" rx="23.83" ry="43.18" transform="translate(35.07 138.58) rotate(-85.78)" fill="#fff" opacity="0.19"/>
+  </g>
+</svg>

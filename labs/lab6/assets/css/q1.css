@@ -1,0 +1,35 @@
+/* ADD ANY LINES OF CODE YOU DEEM NECESSARY FOR QUESTION 1*/
+
+.button {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: black;
+    margin: 12px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#row {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body, html {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background: #f7f5f2;
+    position: relative;
+}
+
+
+.button:hover{
+    opacity: 1;
+    border-radius: 50%;
+    transform: rotate(180deg);
+    transition-duration: 0.45s;
+}
