@@ -1,0 +1,476 @@
+html{
+    font-family: "Mirza";
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+#navbar{
+    background: #f03e3e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+#navbar-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: #ffffff;
+    border-bottom-width: 1px;
+    border-style: solid;
+}
+
+
+
+#navbar-topleft{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    color: #ffffff;
+    width: 20%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#name{
+    display: flex;
+    margin-right: 10px;
+}
+
+#flagdropdown{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+}
+
+#navbar-topcenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffe000;
+    width: 60%;
+}
+
+.nav-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.nav-text p{
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+
+#navbar-topright{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    color: #ffffff;
+    width: 20%;
+}
+
+.top-text{
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Inter';
+}
+
+.top-text i{
+    font-size: 25px;
+}
+
+.top-text:hover{
+    color:#ffe000;
+    cursor: pointer;
+}
+
+#navbar-bot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    width: 100%;
+}
+
+.bot-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    justify-content: center;
+    border-width: 0px;
+    border-right: #ffffff;
+    border-right-width: 1px;
+    border-style: solid;
+    height: 50px;
+}
+
+.bot-text:hover{
+    color: #ffe000;
+    cursor: pointer;
+}
+
+.bot-text-last{
+    border-width: 0px;
+}
+
+.bot-text p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Inter';
+    text-align: center;
+    justify-content: space-between;
+}
+
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("/assets/img/centerImg.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-size: 2000px 1000px;
+    background-color: rgba(255,255,255, 0.4);
+    background-blend-mode: lighten;
+    padding: 20px;
+    height: 770px;
+    margin-top: 100px;
+
+}
+
+
+#intro-name{
+    display: flex;
+    font-weight: bolder;
+    color: #f58600;
+    font-size: 100px;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 3px 3px 3px black;
+    margin-top: 30px;
+}
+
+
+#intro-text{
+    display: flex;
+    font-weight: 600;
+    color: #3d0707;
+    font-size: 90px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1000px;
+    text-align: center;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+#ordernow{
+    display: flex;
+    font-family: 'Inter';
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #ad2118;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 100px;
+}
+
+#ordernow:hover{
+    color: #ffe000;
+    cursor: pointer;
+}
+
+
+#center-content{
+    background: #fffef5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dish{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+    /* padding: 50px; */
+}
+
+.dish-pic{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    padding-bottom: 10px;
+
+}
+
+.dish-pic img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    align-items: center;
+    justify-self: center;
+}
+
+
+.dish-text{
+    display: flex;
+    color: #f12525;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+
+#bottom{
+    background: #1b0800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#empty{
+    display: flex;
+    padding: 20px;
+}
+
+#bot-cols{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.bot-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bot-title{
+    color: #d4cbc7;
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bot-content{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.bot-content p:hover{
+    color: #ffe000;
+    cursor: pointer;
+}
+
+.bot-icon{
+    margin-top: 40px;
+    font-size: 60px;
+}
+
+
+.bot-icon i{
+    margin-right: 10px;
+}
+
+.bot-icon i:hover{
+    cursor: pointer;
+    background-color: #fffe00;
+}
+
+.bot-content p{
+    margin: 2px;
+
+}
+
+.bot-download{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.download{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 200px;
+    height: 90px;
+}
+
+.download:hover{
+    cursor: pointer;
+}
+
+#google img{
+    width: 180%; /* or any custom size */
+    height: 180%; 
+    object-fit: contain;
+    margin-top: 50px;
+}
+
+#apple img{
+    width: 95%;
+    height: 95%;
+    object-fit: contain;
+    margin-left: 25px;
+    
+}
+
+
+#menu{
+    background-color: #fffef5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+#menu-title{
+    display: flex;
+    color: #ff9900;
+    font-size: 90px;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#menu-options{
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    font-weight: 300;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-opt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #ad2118;
+    color: #ffffff;
+    width: 300px;
+    height: 70px;
+    padding-top: 15px;
+}
+
+.menu-opt:hover{
+    background-color: #fffe00;
+    color: #fb0909;
+    cursor: pointer;
+}
+
+
+#menu-dishes{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-dish{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.dish-col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+
+.dish-title{
+    color: #f03e3e;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 50px;
+    height: 40px;
+    margin-left: 10px;
+    text-shadow: 1px 1px 3px #6a1e00;
+}
+
+.dish-sep{
+    background: linear-gradient(45deg, #f03e3e, #ffffff);
+    height: 1px;
+    width: 500px;
+}
+
+.dish-desc{
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.sep{
+    display: flex;
+    width: 1300px;
+    height: 1px;
+    background: linear-gradient(45deg, #ffffff, #f03e3e, #ffffff)
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover{
+    color: #ffe000;
+    cursor: pointer;
+}
