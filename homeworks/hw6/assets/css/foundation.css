@@ -1,0 +1,154 @@
+/* -- TEXT -- */
+body {
+  font-family: "Karla", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  text-transform: lowercase;
+  font-variant: small-caps;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: none;
+  font-variant: none;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  left: 5%;
+}
+
+a {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* -- CONTAINERS + GRID -- */
+body {
+  margin: 0;
+  background: #222;
+}
+
+/* Main container */
+#root {
+  position: absolute;
+  width: 95%;
+  max-width: 1200px;
+  height: 95%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#loaders {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 90%;
+  margin: 0 auto;
+}
+
+/* Loader cards */
+.loader-container {
+  position: relative;
+  width: 50%;
+  min-width: 400px;
+  height: 50%;
+  min-height: 400px;
+  transition: opacity 0.3s;
+}
+#loaders:hover .loader-container {
+  opacity: 0.8;
+}
+#loaders .loader-container:hover {
+  opacity: 1;
+}
+
+.loader-container .bg {
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1000;
+
+  background: #262626;
+  box-shadow: 0px 3px 10px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+.loader-container:hover .bg {
+  box-shadow: 0px 6px 25px 0 rgba(0, 0, 0, 0.8);
+  transform: translate(-50%, -52%);
+}
+
+.loader-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.loader-container:hover .loader-card {
+  transform: translate(-50%, -52%);
+}
+.loader-container:nth-child(1) .loader-card ~ .bg {
+  background: #f7edfa;
+}
+.loader-container:nth-child(2) .loader-card ~ .bg {
+  background: #fffde1;
+}
+.loader-container:nth-child(3) .loader-card ~ .bg {
+  background: #f9d7bc;
+}
+.loader-container:nth-child(4) .loader-card ~ .bg {
+  background: #e5f1f7;
+}
+.loader-container .loader-card:empty ~ .bg {
+  background: #262626;
+}
+
+/* Loader card text */
+.loader-container .bg:before {
+  content: "Blank";
+  display: block;
+  position: absolute;
+  top: -30px;
+  width: 100%;
+  height: 20px;
+}
+.loader-container:nth-child(1) .bg:before {
+  content: "Pulse";
+}
+.loader-container:nth-child(2) .bg:before {
+  content: "Wave";
+}
+.loader-container:nth-child(3) .bg:before {
+  content: "Flip";
+}
+.loader-container:nth-child(4) .bg:before {
+  content: "Spin";
+}
+
+/* Basic loader setup */
+.loader {
+  position: relative;
+}
+
+/* Design Response Link Styles */
+#response {
+  position: relative;
+  left: 5%;
+  font-size: 22px;
+  text-transform: none;
+  font-variant: none;
+}
