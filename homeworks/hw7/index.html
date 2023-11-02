@@ -1,6 +1,45 @@
-<!DOCTYPE html>
 <html>
-    <body>
-        Homework 1
-    </body>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- Add your script file here! -->
+	<script src="assets/js/script.js"></script>
+	<title>Homework 7 - Intro to JS</title>
+</head>
+
+<body>
+
+<div class="content">
+	<h1>We love functions!</h1>
+
+	<!-- Problem 3.1 -->
+	<div id="container">
+		<p>Refresh the page to see new generated values!</p>
+		<ol>
+			<h3>getRandomNum</h3>
+			<li>x = <span id ="x"></span></li>
+			<li>y = <span id ="y"></span></li>
+			<li>x = <span id ="z"></span></li>
+			<h3>averageThreeNumbers</h3>
+			<li>avg = <span id ="avg"></span></li>
+			<h3>createSentence</h3>
+			<li>sentence = "<span id ="sentence"></span>"</li>
+		</ol>
+		<h3>Console output to Part 3.2</h3>
+		<img src="console.png" alt="your console output here. if you see this, then you did not do Part 3.2 correctly.">
+		<h3><a href="design_responses.html">Click here to see design responses</a></h3>
+	</div>
+
+</div>
+<script>
+	window.onload = function() {
+		document.getElementById('x').innerHTML = x;
+		document.getElementById('y').innerHTML = y;
+		document.getElementById('z').innerHTML = z;
+		document.getElementById('avg').innerHTML = avg;
+		document.getElementById('sentence').innerHTML = sentence;
+	};
+	</script>
+</body>
+
 </html>
