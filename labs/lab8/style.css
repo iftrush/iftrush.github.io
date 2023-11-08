@@ -1,0 +1,123 @@
+/* basic setup 
+ ------------------------------ */
+
+body {
+  background: #FCF2CD;
+  color: #67523e;
+}
+
+.container {
+  background: #fff;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px 30px;
+  box-shadow: 0 4px 2px 1px rgba(0,0,0,0.05);
+}
+
+h1 {
+  font-style: italic;
+  text-align: center;
+  border-bottom: 1px solid #67523e;
+  letter-spacing: 1px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+li label {
+  width: 370px;
+  padding: 13px 0 13px 20px;
+}
+
+/* styles for list items 
+ ------------------------------ */
+
+li:hover {
+  background: #ebf6e0;
+}
+
+li input[type="checkbox"],
+li label {
+  cursor: pointer;
+}
+
+li input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+li input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+li small {
+  font-size: 14px;
+  color: #777;
+  background: #eee;
+  padding: 2px 6px;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+
+.highlighted-badge {
+  background: #ffc368;
+  color: #855710;
+}
+
+/* style of button 
+ ------------------------------ */
+
+#toggleButton {
+  width: 200px;
+  display: block;
+  margin: auto;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #67523e;
+  padding: 10px 18px;
+  border-radius: 21px;
+  white-space: nowrap;
+  background-color: transparent;
+  background-image: radial-gradient(#67523e 0,#67523e 75%,transparent 0,transparent 100%);
+  background-repeat: no-repeat;
+  background-size: 0 0;
+  background-position: 50% 50%;
+  border: 1px solid #67523e;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#toggleButton:hover {
+  color: #ebf6e0;
+  background-size: 105% 150%;
+}
+
+/* dark mode styles - EDIT THESE!!!!
+------------------------------ */
+
+.dark-mode {
+  background: #121212;
+  color: rgb(118, 178, 8);
+}
+
+.dark-mode .container {
+  background: #422;
+}
+
+.dark-mode h1 {
+  color: rgb(139, 24, 255);
+}
+
+.dark-mode li:hover {
+  background-color: rgb(5, 3, 34);
+}

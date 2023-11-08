@@ -1,6 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        Lab 1
-    </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="style.css">
+  <title>WDD Lab 8 | Grocery List</title>
+</head>
+<body>
+
+  <main class="container">
+    <h1>Grocery List</h1>  
+    <ul>
+      <li>
+        <input type="checkbox" id="item1" />
+        <label for="item1">cilantro <small class="highlighted-badge">important</small></label>
+      </li>
+      <li>
+        <input type="checkbox" id="item2" />
+        <label for="item2">3 bags of ghost pepper chips <small>snacks</small></label>
+      </li>
+      <li>
+        <input type="checkbox" id="item3" />
+        <label for="item3">can of pumpkin</label>
+      </li>
+      <li>
+        <input type="checkbox" id="item4" />
+        <label for="item4">red bell pepper</label>
+      </li>
+      <li>
+        <input type="checkbox" id="item5" />
+        <label for="item5">green tea Kit Kats <small>snacks</small></label>
+      </li>
+      <li>
+        <input type="checkbox" id="item6" />
+        <label for="item6">dried mango <small>snacks</small></label>
+      </li>
+    </ul>
+  </main>
+  
+  <button id="toggleButton">Toggle Dark Mode</button>
+  
+<script src="script.js"></script>
+</body>
 </html>
