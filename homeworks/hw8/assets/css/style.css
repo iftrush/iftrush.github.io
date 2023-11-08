@@ -1,0 +1,76 @@
+body {
+	background-color: #181818;
+	font-family: 'Poppins', sans-serif;
+	color: #fff;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+.content {
+	width: 600px;
+	margin: 200px auto auto auto;
+}
+
+#songs ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#songs li {
+	display: flex;
+	justify-content: space-between;
+	padding: 14px 12px;
+	width: 100%;
+	border-bottom: 1px solid #282828;
+	font-size: 16px;
+}
+
+#songs li:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+#songs-first-half li:first-child {
+	border-top: 1px solid #282828;
+}
+
+.song-artist {
+	color: #b3b3b3;
+}
+
+#toggle-button {
+	padding: 11px 31px;
+	margin: 20px 0;
+	border: 1px solid #b3b3b3;
+	border-radius: 31px;
+	font-size: 12px;
+	color: #e6e6e6;
+	text-transform: uppercase;
+	background: transparent;
+}
+
+#toggle-button:hover {
+	font-weight: bold;
+	font-size: 13px;
+	color: #fff;
+	border-color: #fff;
+}
+
+#toggle-button:focus {
+	outline: none;
+}
+
+#toggle-button:active {
+	border-color: #838383;
+	font-weight: normal;
+	font-size: 12px;
+	color: #ccc;
+}
+
+/* Problem 3.1 */
+
+.hidden {
+    display: none;
+}
