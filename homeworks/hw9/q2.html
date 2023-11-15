@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+	<title>Finsta Revisited</title>
+	<link rel="stylesheet" href="assets/styles/style.css"/>
+</head>
+<body>
+	<!-- row of three pictures -->
+	<div id="pictures">
+		<img src="assets/images/doggo1.jpg" alt="" id="picture-1">
+		<img src="assets/images/doggo2.jpg" alt="" id="picture-2">
+		<img src="assets/images/doggo3.jpg" alt="" id="picture-3">
+	</div>
+
+	<!-- full-screen overlay for lightbox -->
+	<div id="lightbox-overlay" class="hidden"></div>
+
+	<!-- lightbox pop-up elements that are hidden using a css class -->
+	<div class="lightbox hidden" id="doggo1">
+		<img src="assets/images/doggo1.jpg" alt="">
+		<div class="caption">
+			Heidi's dog at the park!
+		</div>
+	</div>
+	<div class="lightbox hidden" id="doggo2">
+		<img src="assets/images/doggo2.jpg" alt="">
+		<div class="caption">
+			Heidi's dog is clearly interested in sudoku.
+		</div>
+	</div>
+	<div class="lightbox hidden" id="doggo3">
+		<img src="assets/images/doggo3.jpg" alt="">
+		<div class="caption">
+			Heidi's dog at the park again!
+		</div>
+	</div>
+
+    <script src="assets/scripts/q2.js"></script>
+</body>
+</html>
