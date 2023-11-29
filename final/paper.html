@@ -1,0 +1,221 @@
+<html>
+<head>
+    <title>Papers I Read</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lavishly Yours|Arvo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="utf-8">
+</head>
+<body>
+    <div id="content">
+        <div id="navbar">
+            <div id="name" class="width30">
+                <a href="index.html">Papers I Read</a>
+            </div>
+            <div id="nav-row" class="width70">
+                <div id="category">
+                    <div class="category-items">Home</div>
+                    <div class="category-items">Profile</div>
+                    <div class="category-items">Overview</div>
+                    <div class="category-items">Category</div>
+                </div>
+                <div id="login">login</div>
+            </div>
+        </div>
+        <div id="main">
+            <div id="main-left" class="width30">
+                <div id="photo">
+                    <img src="/assets/images/oski.jpeg" id="oski">
+                </div>
+                <div id="username" class="user-property">Oski</div>
+                <div id="company" class="user-property">Student @ UC Berkeley</div>
+                <div class="user-property">
+                    <i class="fa-solid fa-location-pin svg" style="color: #27374d;"></i>Berkeley, CA, USA
+                </div>
+                <div class="user-property">
+                    <i class="fa-solid fa-envelope svg" style="color: #27374d;"></i>oski@berkeley.edu
+                </div>
+                <div class="user-property">
+                    <i class="fa-brands fa-github svg" style="color: #27374d;"></i>oski
+                </div>
+                <div class="user-property">
+                    <i class="fa-solid fa-book-open svg" style="color: #27374d;"></i>Papers read: 100
+                </div>
+                <div class="user-property">
+                    <i class="fa-solid fa-thumbs-up svg" style="color: #27374d;"></i>Avg. Citations: 1234
+                </div>
+                <div class="user-property">
+                    <i class="fa-solid fa-list svg" style="color: #27374d;"></i>Following Categories:
+                </div>
+                <ul>
+                    <li id="li-sp">Speech Processing</li>
+                    <li id="li-cv">Computer Vision</li>
+                    <li id="li-nlp">Natural Language Processing</li>
+                    <li id="li-rl">Reinforcement Learning</li>
+                </ul>
+                <div id="line"></div>
+                <div id="cat-title">Papers in Category:</div>
+                <div id="paper-stack">
+                    <ul id="paper-list">
+                        <li id="first">
+                            <div id = "paper0" class="love paper0 paper"><i class="fa-solid fa-heart" style="color: #1075ff;"></i></div>
+                            <a href="paper.html">wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations</a>
+                        </li>
+                        <li>
+                            <div id = "paper1" class="love paper1 paper"><i class="fa-solid fa-heart" style="color: #1075ff;"></i></div>
+                            <a href="paper2.html">HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units</a>
+                        </li>
+                        <li>
+                            <div id = "paper2" class="love paper2 paper"><i class="fa-solid fa-heart" style="color: #1075ff;"></i></div>
+                            Conv-TasNet: Surpassing Ideal Time-Frequency Magnitude Masking for Speech Separation
+                        </li>
+                        <li>
+                            <div id = "paper3" class="love paper3 paper"><i class="fa-solid fa-heart" style="color: #1075ff;"></i></div>
+                            AV-data2vec: Self-supervised Learning of Audio-Visual Speech Representations with Contextualized Target Representations
+                        </li>
+                        <li>
+                            <div id = "paper4" class="love paper4 paper"><i class="fa-regular fa-heart" style="color: #1075ff;"></i></div>
+                            Attention is All You Need in Speech Separation
+                        </li>
+                        <li>
+                            <div id = "paper5" class="love paper5 paper"><i class="fa-regular fa-heart" style="color: #1075ff;"></i></div>
+                            Wavesplit: End-to-End Speech Separation by Speaker Clustering
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+            <div id="main-right" class="width70">
+
+                <div id="sp" class="cat">
+                    <div id="cat-pic">
+                        <img src="/assets/images/wav2vec2.0.png">
+                    </div>
+                    <div class="width60 paper-title">
+                        <div class="paper paper0"><i class="fa-solid fa-heart" style="color: #1075ff;"></i></div>
+                        wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations
+                    </div>
+                    <div class="container">
+                        <div class="width20"></div>
+                        <div class="width60">
+                            <div class="paper-link"><a href="https://arxiv.org/abs/2006.11477">https://arxiv.org/abs/2006.11477</a></div>
+                            <div class="container-title cat-title first">Abstract:</div>
+                            <div class="container-stack">
+                                <div class="container-bar">||</div>
+                                <div class="container-disc">
+                                    We show for the first time that learning powerful representations from speech audio alone followed by fine-tuning on transcribed speech can outperform the best semi-supervised methods while being conceptually simpler. wav2vec 2.0 masks the speech input in the latent space and solves a contrastive task defined over a quantization of the latent representations which are jointly learned. Experiments using all labeled data of Librispeech achieve 1.8/3.3 WER on the clean/other test sets. When lowering the amount of labeled data to one hour, wav2vec 2.0 outperforms the previous state of the art on the 100 hour subset while using 100 times less labeled data. Using just ten minutes of labeled data and pre-training on 53k hours of unlabeled data still achieves 4.8/8.2 WER. This demonstrates the feasibility of speech recognition with limited amounts of labeled data.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="width20"></div>
+                    </div>
+
+                    <div class="container">
+                        <div class="width20"></div>
+                        <div class="width60">
+                            <div class="container-title cat-title">1. Introduction</div>
+                        <div class="container-stack hidden">
+                            <div class="container-bar">||</div>
+                            <div class="container-disc">
+                                Neural networks benefit from large quantities of labeled training data. However, in many settings
+                                labeled data is much harder to come by than unlabeled data: current speech recognition systems
+                                require thousands of hours of transcribed speech to reach acceptable performance which is not
+                                available for the vast majority of the nearly 7,000 languages spoken worldwide [31]. Learning purely
+                                from labeled examples does not resemble language acquisition in humans: infants learn language by
+                                listening to adults around them - a process that requires learning good representations of speech.
+                                In machine learning, self-supervised learning has emerged as a paradigm to learn general data
+                                representations from unlabeled examples and to fine-tune the model on labeled data. This has been
+                                particularly successful for natural language processing [43, 45, 9] and is an active research area for
+                                computer vision [20, 2, 36, 19, 6].
+                                In this paper, we present a framework for self-supervised learning of representations from raw audio
+                                data. Our approach encodes speech audio via a multi-layer convolutional neural network and then
+                                masks spans of the resulting latent speech representations [26, 56], similar to masked language
+                                modeling [9]. The latent representations are fed to a Transformer network to build contextualized representations and the model is trained via a contrastive task where the true latent is to be distinguished
+                                from distractors [54, 49, 48, 28] (§ 2).
+                                As part of training, we learn discrete speech units [53, 32, 7, 18] via a gumbel softmax [24, 5]
+                                to represent the latent representations in the contrastive task (Figure 1) which we find to be more
+                                effective than non-quantized targets. After pre-training on unlabeled speech, the model is fine-tuned on labeled data with a Connectionist Temporal Classification (CTC) loss [14, 4] to be used for
+                                downstream speech recognition tasks (§ 3)
+                                Previous work learned a quantization of the data followed by a contextualized representations with a
+                                self-attention model [5, 4], whereas our approach solves both problems end-to-end. Masking parts
+                                of the input with Transformer networks for speech has been explored [4, 26], but prior work relies
+                                either on a two-step pipeline or their model is trained by reconstructing the filter bank input features.
+                                Other related work includes learning representations from auto-encoding the input data [52, 11] or
+                                directly predicting future timesteps [8].
+                                Our results show that jointly learning discrete speech units with contextualized representations
+                                achieves substantially better results than fixed units learned in a prior step [4]. We also demonstrate
+                                the feasibility of ultra-low resource speech recognition: when using only 10 minutes of labeled data,
+                                our approach achieves word error rate (WER) 4.8/8.2 on the clean/other test sets of Librispeech.
+                                We set a new state of the art on TIMIT phoneme recognition as well as the 100 hour clean subset
+                                of Librispeech. Moreover, when we lower the amount of labeled data to just one hour, we still
+                                outperform the previous state of the art self-training method of [42] while using 100 times less
+                                labeled data and the same amount of unlabeled data. When we use all 960 hours of labeled data from
+                                Librispeech, then our model achieves 1.8/3.3 WER (§ 4, § 5).
+                            </div>
+                        </div>
+                        </div>
+                        <div class="width20"></div>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="width20"></div>
+                        <div class="width60">
+                            <div class="container-title cat-title">2. Model</div>
+                        <div class="container-stack hidden">
+                            <div class="container-bar">||</div>
+                            <div class="container-disc">
+                                test
+                            </div>
+                        </div>
+                        </div>
+                        <div class="width20"></div>
+                    </div>
+
+                    <div class="container">
+                        <div class="width20"></div>
+                        <div class="width60">
+                            <div class="container-title cat-title">3. Training</div>
+                        <div class="container-stack hidden">
+                            <div class="container-bar">||</div>
+                            <div class="container-disc">
+                                test
+                            </div>
+                        </div>
+                        </div>
+                        <div class="width20"></div>
+                    </div>
+
+                    <div class="container">
+                        <div class="width20"></div>
+                        <div class="width60">
+                            <div class="container-title cat-title">4. Experiment</div>
+                        <div class="container-stack hidden">
+                            <div class="container-bar">||</div>
+                            <div class="container-disc">
+                                <ul>
+                                    <li>Datasets</li>
+                                    <li>Pre-training</li>
+                                    <li>Fine-tuning</li>
+                                    <li>Language Models and Decoding</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="width20"></div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+        </div>
+    </div>
+
+
+
+<script src="assets/js/paper.js"></script>
+</body>
+</html>

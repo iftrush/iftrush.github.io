@@ -1,6 +1,210 @@
-<!DOCTYPE html>
 <html>
-    <body>
-        FINAL
-    </body>
+<head>
+    <title>Papers I Read</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lavishly Yours|Arvo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="utf-8">
+</head>
+<body>
+    <div id="content">
+        <div id="navbar">
+            <div id="name" class="width30">
+                <a href="index.html">Papers I Read</a>
+            </div>
+            <div id="nav-row" class="width70">
+                <div id="category">
+                    <div class="category-items">Home</div>
+                    <div class="category-items">Profile</div>
+                    <div class="category-items">Overview</div>
+                    <div class="category-items">Category</div>
+                </div>
+                <div id="login">login</div>
+            </div>
+        </div>
+        <div id="main">
+            <div id="main-left" class="width30">
+                <div id="photo">
+                    <img src="/assets/images/oski.jpeg" id="oski">
+                </div>
+                <div id="username" class="user-property">Oski</div>
+                <div id="company" class="user-property">Student @ UC Berkeley</div>
+                <div class="user-property">
+                    <i class="fa-solid fa-location-pin svg" style="color: #27374d;"></i>Berkeley, CA, USA
+                </div>
+                <div class="user-property">
+                    <i class="fa-solid fa-envelope svg" style="color: #27374d;"></i>oski@berkeley.edu
+                </div>
+                <div class="user-property">
+                    <i class="fa-brands fa-github svg" style="color: #27374d;"></i>oski
+                </div>
+                <div class="user-property">
+                    <i class="fa-solid fa-book-open svg" style="color: #27374d;"></i>Papers read: 100
+                </div>
+                <div class="user-property">
+                    <i class="fa-solid fa-thumbs-up svg" style="color: #27374d;"></i>Avg. Citations: 1234
+                </div>
+                <div class="user-property">
+                    <i class="fa-solid fa-list svg" style="color: #27374d;"></i>Following Categories:
+                </div>
+                <ul>
+                    <li id="li-sp">Speech Processing</li>
+                    <li id="li-cv">Computer Vision</li>
+                    <li id="li-nlp">Natural Language Processing</li>
+                    <li id="li-rl">Reinforcement Learning</li>
+                </ul>
+            </div>
+            <div id="main-right" class="width70">
+
+                <div id="sp" class="cat">
+                    <div id="cat-pic">
+                        <img src="/assets/images/librosa-cqt-1.png">
+                    </div>
+                    <div class="container">
+                        <div class="width20"></div>
+                        <div class="width60">
+                            <div class="container-title">Speech Processing</div>
+                            <div class="container-stack">
+                                <div class="container-bar">||</div>
+                                <div class="container-disc">
+                                    Speech processing is the study of speech signals and the processing methods of signals. 
+                                    The signals are usually processed in a digital representation, so speech processing can 
+                                    be regarded as a special case of digital signal processing, applied to speech signals. 
+                                    Aspects of speech processing includes the acquisition, manipulation, storage, transfer 
+                                    and output of speech signals. Different speech processing tasks include speech recognition, 
+                                    speech synthesis, speaker diarization, speech enhancement, speaker recognition, etc.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="width20"></div>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="width20"></div>
+                        <div class="width60">
+                            <div class="container-title">Recommended Papers:</div>
+                        <div class="container-stack">
+                            <div class="container-bar">||</div>
+                            <div class="container-disc">
+                                <ol>
+                                    <li>
+                                        <a href="paper.html">wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations</a>
+                                        <div class="box">
+                                          <iframe src="paper.html" width = "500px" height = "500px">
+                                          </iframe>
+                                        </div> 
+                                    </li>
+                                    <li>
+                                        <a href="paper2.html">HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units</a>
+                                        <div class="box">
+                                          <iframe src="paper2.html" width = "500px" height = "500px">
+                                          </iframe>
+                                        </div> 
+                                    </li>
+                                    <li>
+                                        <a href="https://arxiv.org/pdf/1809.07454.pdf">Conv-TasNet: Surpassing Ideal Time-Frequency Magnitude Masking for Speech Separation</a>
+                                        <div class="box">
+                                          <iframe src="https://arxiv.org/pdf/1809.07454.pdf" width = "500px" height = "500px">
+                                          </iframe>
+                                        </div> 
+                                    </li>
+                                    <li>
+                                        <a href="https://arxiv.org/pdf/2302.06419.pdf">AV-data2vec: Self-supervised Learning of Audio-Visual Speech Representations with Contextualized Target Representations</a>
+                                        <div class="box">
+                                          <iframe src="https://arxiv.org/pdf/2302.06419.pdf" width = "500px" height = "500px">
+                                          </iframe>
+                                        </div> 
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="width20"></div>
+                    </div>
+                </div>
+
+
+                <div id="cv" class="cat hidden">
+                    <div id="cat-pic">
+                        <img src="/assets/images/cv.webp">
+                    </div>
+                    <div class="container">
+                        <div class="width20"></div>
+                        <div class="width60">
+                            <div class="container-title">Computer Vision</div>
+                            <div class="container-stack">
+                                <div class="container-bar">||</div>
+                                <div class="container-disc">
+                                    Computer vision tasks include methods for acquiring, processing, analyzing and 
+                                    understanding digital images, and extraction of high-dimensional data from the 
+                                    real world in order to produce numerical or symbolic information, e.g. in the 
+                                    forms of decisions. Understanding in this context means the transformation 
+                                    of visual images (the input to the retina in the human analog) into descriptions 
+                                    of the world that make sense to thought processes and can elicit appropriate action. 
+                                    This image understanding can be seen as the disentangling of symbolic information from 
+                                    image data using models constructed with the aid of geometry, physics, statistics, and 
+                                    learning theory.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="width20"></div>
+                    </div>
+
+                    <div class="container">
+                        <div class="width20"></div>
+                        <div class="width60">
+                            <div class="container-title">Recommended Papers:</div>
+                        <div class="container-stack">
+                            <div class="container-bar">||</div>
+                            <div class="container-disc">
+                                <ol>
+                                    <li>
+                                        <a href="https://arxiv.org/pdf/1512.03385.pdf">Deep Residual Learning for Image Recognition
+                                        </a>
+                                        <div class="box">
+                                          <iframe src="https://arxiv.org/pdf/1512.03385.pdf" width = "500px" height = "500px">
+                                          </iframe>
+                                        </div> 
+                                    </li>
+                                    <li>
+                                        <a href="https://arxiv.org/pdf/2003.08934.pdf">NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis
+                                        </a>
+                                        <div class="box">
+                                          <iframe src="https://arxiv.org/pdf/2003.08934.pdf" width = "500px" height = "500px">
+                                          </iframe>
+                                        </div> 
+                                    </li>
+                                    <li>
+                                        <a href="https://arxiv.org/pdf/1706.03762.pdf">Attention Is All You Need
+                                        </a>
+                                        <div class="box">
+                                          <iframe src="https://arxiv.org/pdf/1706.03762.pdf" width = "500px" height = "500px">
+                                          </iframe>
+                                        </div> 
+                                    </li>
+                                    <li>
+                                        <a href="https://arxiv.org/pdf/2006.11239.pdf">Denoising Diffusion Probabilistic Models</a>
+                                        <div class="box">
+                                          <iframe src="https://arxiv.org/pdf/2006.11239.pdf" width = "500px" height = "500px">
+                                          </iframe>
+                                        </div> 
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="width20"></div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+
+
+<script src="assets/js/script.js"></script>
+</body>
 </html>

@@ -1,0 +1,217 @@
+<html>
+<head>
+    <title>Papers I Read</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lavishly Yours|Arvo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="utf-8">
+</head>
+<body>
+    <div id="content">
+        <div id="navbar">
+            <div id="name" class="width30">
+                <a href="index.html">Papers I Read</a>
+            </div>
+            <div id="nav-row" class="width70">
+                <div id="category">
+                    <div class="category-items">Home</div>
+                    <div class="category-items">Profile</div>
+                    <div class="category-items">Overview</div>
+                    <div class="category-items">Category</div>
+                </div>
+                <div id="login">login</div>
+            </div>
+        </div>
+        <div id="main">
+            <div id="main-left" class="width30">
+                <div id="photo">
+                    <img src="/assets/images/oski.jpeg" id="oski">
+                </div>
+                <div id="username" class="user-property">Oski</div>
+                <div id="company" class="user-property">Student @ UC Berkeley</div>
+                <div class="user-property">
+                    <i class="fa-solid fa-location-pin svg" style="color: #27374d;"></i>Berkeley, CA, USA
+                </div>
+                <div class="user-property">
+                    <i class="fa-solid fa-envelope svg" style="color: #27374d;"></i>oski@berkeley.edu
+                </div>
+                <div class="user-property">
+                    <i class="fa-brands fa-github svg" style="color: #27374d;"></i>oski
+                </div>
+                <div class="user-property">
+                    <i class="fa-solid fa-book-open svg" style="color: #27374d;"></i>Papers read: 100
+                </div>
+                <div class="user-property">
+                    <i class="fa-solid fa-thumbs-up svg" style="color: #27374d;"></i>Avg. Citations: 1234
+                </div>
+                <div class="user-property">
+                    <i class="fa-solid fa-list svg" style="color: #27374d;"></i>Following Categories:
+                </div>
+                <ul>
+                    <li id="li-sp">Speech Processing</li>
+                    <li id="li-cv">Computer Vision</li>
+                    <li id="li-nlp">Natural Language Processing</li>
+                    <li id="li-rl">Reinforcement Learning</li>
+                </ul>
+                <div id="line"></div>
+                <div id="cat-title">Papers in Category:</div>
+                <div id="paper-stack">
+                    <ul id="paper-list">
+                        <li>
+                            <div id = "paper0" class="love paper0 paper"><i class="fa-solid fa-heart" style="color: #1075ff;"></i></div>
+                            <a href="paper.html">wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations</a>
+                        </li>
+                        <li id="first">
+                            <div id = "paper1" class="love paper1 paper"><i class="fa-solid fa-heart" style="color: #1075ff;"></i></div>
+                            <a href="paper2.html">HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units</a>
+                        </li>
+                        <li>
+                            <div id = "paper2" class="love paper2 paper"><i class="fa-solid fa-heart" style="color: #1075ff;"></i></div>
+                            Conv-TasNet: Surpassing Ideal Time-Frequency Magnitude Masking for Speech Separation
+                        </li>
+                        <li>
+                            <div id = "paper3" class="love paper3 paper"><i class="fa-solid fa-heart" style="color: #1075ff;"></i></div>
+                            AV-data2vec: Self-supervised Learning of Audio-Visual Speech Representations with Contextualized Target Representations
+                        </li>
+                        <li>
+                            <div id = "paper4" class="love paper4 paper"><i class="fa-regular fa-heart" style="color: #1075ff;"></i></div>
+                            Attention is All You Need in Speech Separation
+                        </li>
+                        <li>
+                            <div id = "paper5" class="love paper5 paper"><i class="fa-regular fa-heart" style="color: #1075ff;"></i></div>
+                            Wavesplit: End-to-End Speech Separation by Speaker Clustering
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+            <div id="main-right" class="width70">
+
+                <div id="sp" class="cat">
+                    <div id="cat-pic">
+                        <img src="/assets/images/wav2vec2.0.png">
+                    </div>
+                    <div class="width60 paper-title">
+                        <div class="paper paper1"><i class="fa-solid fa-heart" style="color: #1075ff;"></i></div>
+                        HuBERT: Self-Supervised Speech Representation
+Learning by Masked Prediction of Hidden Units
+                    </div>
+                    <div class="container">
+                        <div class="width20"></div>
+                        <div class="width60">
+                            <div class="paper-link"><a href="https://arxiv.org/abs/2006.11477">https://arxiv.org/abs/2006.11477</a></div>
+                            <div class="container-title cat-title first">Abstract:</div>
+                            <div class="container-stack">
+                                <div class="container-bar">||</div>
+                                <div class="container-disc">
+                                    Self-supervised approaches for speech representation learning are challenged by three unique problems: (1) there
+                                    are multiple sound units in each input utterance, (2) there is
+                                    no lexicon of input sound units during the pre-training phase,
+                                    and (3) sound units have variable lengths with no explicit
+                                    segmentation. To deal with these three problems, we propose
+                                    the Hidden-Unit BERT (HuBERT) approach for self-supervised
+                                    speech representation learning, which utilizes an offline clustering
+                                    step to provide aligned target labels for a BERT-like prediction
+                                    loss. A key ingredient of our approach is applying the prediction
+                                    loss over the masked regions only, which forces the model to learn
+                                    a combined acoustic and language model over the continuous
+                                    inputs. HuBERT relies primarily on the consistency of the
+                                    unsupervised clustering step rather than the intrinsic quality
+                                    of the assigned cluster labels. Starting with a simple k-means
+                                    teacher of 100 clusters, and using two iterations of clustering, the
+                                    HuBERT model either matches or improves upon the state-ofthe-art wav2vec 2.0 performance on the Librispeech (960h) and
+                                    Libri-light (60,000h) benchmarks with 10min, 1h, 10h, 100h, and
+                                    960h fine-tuning subsets. Using a 1B parameter model, HuBERT
+                                    shows up to 19% and 13% relative WER reduction on the more
+                                    challenging dev-other and test-other evaluation subsets.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="width20"></div>
+                    </div>
+
+                    <div class="container">
+                        <div class="width20"></div>
+                        <div class="width60">
+                            <div class="container-title cat-title">1. Introduction</div>
+                        <div class="container-stack hidden">
+                            <div class="container-bar">||</div>
+                            <div class="container-disc">
+                                The north star for many research programs has been learning
+                                speech and audio representations through listening and interaction, similar to how babies learn their first language. High
+                                fidelity speech representation includes disentangled aspects
+                                of the spoken content along with non-lexical information of
+                                how it is delivered, e.g., speaker identity, emotion, hesitation,
+                                interruptions. Furthermore, reaching a complete situational
+                                understanding requires modeling structured noise interleaving
+                                and overlapping with the speech signal, e.g., laughter, coughing, lip-smacking, background vehicle engine, birds chirping,
+                                or food sizzling sounds.
+                            </div>
+                        </div>
+                        </div>
+                        <div class="width20"></div>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="width20"></div>
+                        <div class="width60">
+                            <div class="container-title cat-title">2. Method</div>
+                        <div class="container-stack hidden">
+                            <div class="container-bar">||</div>
+                            <div class="container-disc">
+                                test
+                            </div>
+                        </div>
+                        </div>
+                        <div class="width20"></div>
+                    </div>
+
+                    <div class="container">
+                        <div class="width20"></div>
+                        <div class="width60">
+                            <div class="container-title cat-title">3. Related Work</div>
+                        <div class="container-stack hidden">
+                            <div class="container-bar">||</div>
+                            <div class="container-disc">
+                                test
+                            </div>
+                        </div>
+                        </div>
+                        <div class="width20"></div>
+                    </div>
+
+                    <div class="container">
+                        <div class="width20"></div>
+                        <div class="width60">
+                            <div class="container-title cat-title">4. Experimental Details:</div>
+                        <div class="container-stack hidden">
+                            <div class="container-bar">||</div>
+                            <div class="container-disc">
+                                <ul>
+                                    <li>Data</li>
+                                    <li>Unsupervised Unit Discovery</li>
+                                    <li>Pre-Training</li>
+                                    <li>Supervised Fine-Tuning and Decoding</li>
+                                    <li>Metrics of Target Quality</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="width20"></div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+        </div>
+    </div>
+
+
+
+<script src="assets/js/paper.js"></script>
+</body>
+</html>
