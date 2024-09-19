@@ -133,3 +133,18 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* For laptops and larger screens */
+@media (min-width: 500px) {
+  .responsive-image {
+      width: 150%;
+      max-width: 150%;
+  }
+}
