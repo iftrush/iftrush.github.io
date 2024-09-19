@@ -141,10 +141,23 @@ span.highlight {
   max-width: 100%;
 }
 
+
+.responsive-image-big {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+
 /* For laptops and larger screens */
 @media (min-width: 500px) {
   .responsive-image {
       width: 150%;
       max-width: 150%;
   }
+  .responsive-image-big {
+      width: 200%;
+      max-width: 200%;
+  }
 }
+
