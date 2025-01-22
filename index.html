@@ -107,7 +107,7 @@
               <td style="padding:0px">
                 <br>
                 <p style="text-align:right;font-size:small;">
-                  Last updated: Jan. 2025
+                  Last updated: <span id="last-updated"></span>
                 </p>
 
                 <p style="text-align:right;font-size:small;">
@@ -119,5 +119,16 @@
         </td>
       </tr>
     </table>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+          const lastUpdated = new Date(document.lastModified);
+          const options = { year: 'numeric', month: 'short' };
+          document.getElementById("last-updated").textContent = 
+              `${lastUpdated.toLocaleDateString('en-US', options)}`;
+      });
+    </script>
+  
+
   </body>
 </html>
