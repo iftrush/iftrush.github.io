@@ -21,14 +21,13 @@
                 <p class="name" style="text-align: center;">
                   Kan Jen Cheng
                 </p>
-                <p>I'm a student at <a href="https://www.berkeley.edu/">UC Berkeley</a>. Currently, I am doing audio research in <a href="https://people.eecs.berkeley.edu/~gopala/">Berkeley Speech Group</a>.
+                <p>I'm a research assistant at <a href="https://www.berkeley.edu/">UC Berkeley</a>. Currently, I am doing audio-visual research in <a href="https://people.eecs.berkeley.edu/~gopala/">Berkeley Speech Group (BAIR)</a>, advised by professor <a href="https://people.eecs.berkeley.edu/~gopala/">Gopala Anumanchipalli</a>.
                 </p>
                 <p>
-                  My research interests center on auditory perception, sound synthesis, texture editing, and computer vision. Recognizing that human perception of the environment relies heavily on the interplay between auditory and visual cues, I aim to develop sophisticated multi-modal systems capable of integrating audio-visual information to enhance human understanding, interpretation, and interaction with the world.
-                </p>
+                  My research interests lie at the intersection of audio-visual learning, multi-modal perception, and generative AI. While recent advancements in LLMs have mastered language, I view text as a reduction of reality. Instead, I aim to build multi-modal systems that perceive the world through the synergy of sight and sound with spatial awareness and physical grounding.</p>
                 <p style="text-align:center">
                   <a href="mailto:kanjencheng@berkeley.edu">Email</a> &nbsp;/&nbsp;
-                  <a href="data/CV_Kan_Jen_Cheng_updated.pdf">CV</a> &nbsp;/&nbsp;
+                  <!-- <a href="data/CV_Kan_Jen_Cheng.pdf">CV</a> &nbsp;/&nbsp; -->
                   <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp; -->
                   <!-- <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp; -->
                   <!-- <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp; -->
@@ -43,10 +42,22 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
+                <h2>Research Philosophies</h2>
                 <p>
-                  I'm interested in deep learning, generative AI, and audio processing. Most of my research is about inferring the physical world (speech, sound etc) from audio. Some papers are <span class="highlight">highlighted</span>.
+                  My work is driven by two core philosophies: <b><i>human-centered perception</i></b>, where I model speech characteristics, affective dynamics, and joint cognitive attention to capture how humans naturally experience the world; and <b><i>creative media</i></b>, where I develop tools that offer precise, object-level control for content creation. 
                 </p>
+                <h2>Future Directions</h2>
+                <p>
+                  As an audio-visual researcher, I have witnessed the power of multimodal synergy, yet I
+                  realize that correlation alone is insufficient. True perception requires understanding the physical laws, such
+                  as geometry, dynamics, and material interactions, that govern the spaces where sight and sound coexist.
+                  Consequently, my future research will focus on spatial and physical learning to contribute to the development
+                  of a comprehensive world model. I aim to move beyond surface-level alignment to construct digital twins
+                  that not only mimic the appearance of the environment but also simulate its underlying physical reality. By
+                  grounding audio-visual generation in these physical truths, we can enable agents to reason about the world
+                  through a unified sensory experience.
+                </p>
+                <h2>Research</h2>
               </td>
             </tr>
           </tbody></table>
@@ -54,32 +65,210 @@
 
 
 
-    <tr>
+
+    <tr onmouseout="av_hf_cache_stop()" onmouseover="av_hf_cache_start()">
       <td style="padding:20px;width:45%;margin: auto;text-align: center;">
-        <div class="one" style="margin-left: 0; position: relative">
-          <img src="images/emo_score.png" id="emo_score_img" style="opacity:0; position:absolute; top:-10%; left:50%; width:130%; height:130%; transition: opacity 0.2s;">
-          <img src="images/emo_reason_teaser.png" class="responsive-image-big" id="emo_img" style="margin-top: 0px; cursor:default; transition: opacity 0.2s;">
+        <div class="one" style="margin-left: 0%;">
+          <div class="two" id='av_hf_score' style="margin-left: 0%">
+            <img src='images/av_hf_flow.png' class="responsive-image-big", style="margin-top: 30%; height: 50%;">
+          </div>
+          <img src='images/av_hf_teaser.png' class="responsive-image-big" id="av_hf" style="margin-top: -5%; height: 120%;">
         </div>
         <script type="text/javascript">
-          const emoImg = document.getElementById('emo_img');
-          const emoScoreImg = document.getElementById('emo_score_img');
-          emoImg.addEventListener('mouseover', () => {
-            emoScoreImg.style.opacity = "1";
-            emoImg.style.opacity = "0";
-          });
-          emoImg.addEventListener('mouseout', () => {
-            emoScoreImg.style.opacity = "0";
-            emoImg.style.opacity = "1";
-          });
+          function av_hf_cache_start() {
+            document.getElementById('av_hf_score').style.opacity = "1";
+            document.getElementById('av_hf').style.opacity = "0";
+          }
+
+          function av_hf_cache_stop() {
+            document.getElementById('av_hf_score').style.opacity = "0";
+            document.getElementById('av_hf').style.opacity = "1";
+          }
+          av_hf_cache_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://berkeley-speech-group.github.io/emo-reasoning/">
+        <a href="TODO">
+          <span class="papertitle">CAVE: Coherent Audio-Visual Emphasis via Schrödinger Bridge</span>
+        </a>
+        <br>
+        <a href="https://iftrush.github.io/"><b>Kan Jen Cheng*</b></a>,
+        <a href="https://wx83.github.io/">Weihan Xu*</a>,
+        Koichi Saito,
+        Nicholas Lee,
+        <a href="http://louis-liu.notion.site/">Yisi Liu</a>,
+        <a href="https://jlian2.github.io/">Jiachen Lian</a>,
+        <a href="https://tinglok.netlify.app/">Tingle Li</a>,
+        <a href="https://alexander-h-liu.github.io/">Alexander H. Liu</a>,
+        <a href="https://fnzhan.com/">Fangneng Zhan</a>,        
+        Masato Ishii,
+        Takashi Shibuya,
+        <a href="https://pliang279.github.io/">Paul Pu Liang</a>,
+        <a href="https://people.eecs.berkeley.edu/~gopala/">Gopala Anumanchipalli</a>
+        <br>
+        <em>under review</em> &nbsp <font color="red"></font>
+        <br>
+        Collaborate with <i>Sony AI</i> & <i>MIT Media Lab</i>
+        <br>
+        <a href="TODO">project page</a>
+        /
+        <a href="TODO">arXiv</a>
+        <p></p>
+        <p>
+          A realization of human's audio-visual selective attention that jointly emphasizes the selected object visually and acoustically based on flow-based Schrödinger bridge. </p>
+      </td>
+    </tr>
+
+
+
+    <tr onmouseout="av_edit_cache_stop()" onmouseover="av_edit_cache_start()">
+      <td style="padding:20px;width:45%;margin: auto;text-align: center;">
+        <div class="one" style="margin-left: 0%;">
+          <div class="two" id='av_edit_score' style="margin-left: 0%">
+            <img src='images/av_edit_flow.png' class="responsive-image-big", style="margin-top: 30%; height: 50%;">
+          </div>
+          <img src='images/av_edit_teaser.png' class="responsive-image-big" id="av_edit" style="margin-top: -5%;">
+        </div>
+        <script type="text/javascript">
+          function av_edit_cache_start() {
+            document.getElementById('av_edit_score').style.opacity = "1";
+            document.getElementById('av_edit').style.opacity = "0";
+          }
+
+          function av_edit_cache_stop() {
+            document.getElementById('av_edit_score').style.opacity = "0";
+            document.getElementById('av_edit').style.opacity = "1";
+          }
+          av_edit_cache_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="TODO">
+          <span class="papertitle">Schrödinger Audio-Visual Editor: Object-Level Audiovisual Removal</span>
+        </a>
+        <br>
+        <a href="https://wx83.github.io/">Weihan Xu*</a>,
+				<a href="https://iftrush.github.io/"><b>Kan Jen Cheng*</b></a>,
+        Koichi Saito,
+        Muhammad Jehanzeb Mirza,
+        <a href="https://tinglok.netlify.app/">Tingle Li</a>,
+        <a href="http://louis-liu.notion.site/">Yisi Liu</a>,
+        <a href="https://alexander-h-liu.github.io/">Alexander H. Liu</a>,
+        Liming Wang,
+        Masato Ishii,
+        Takashi Shibuya,
+        Yuki Mitsufuji,
+        <a href="https://people.eecs.berkeley.edu/~gopala/">Gopala Anumanchipalli</a>,
+        <a href="https://pliang279.github.io/">Paul Pu Liang</a>
+        <br>
+        <em>under review</em> &nbsp <font color="red"></font>
+        <br>
+        Collaborate with <i>Sony AI</i> & <i>MIT Media Lab</i>
+        <br>
+        <a href="TODO">project page</a>
+        /
+        <a href="TODO">arXiv</a>
+        <p></p>
+        <p>
+          A text-guided joint audio-visual texture editing model based on flow-based Schrödinger bridge.</p>
+      </td>
+    </tr>
+  
+
+
+
+
+
+
+    <tr onmouseout="av_emo_cache_stop()" onmouseover="av_emo_cache_start()">
+      <td style="padding:20px;width:45%;margin: auto;text-align: center;">
+        <div class="one" style="margin-left: 0%; margin-top: -20%;">
+          <div class="two" id='av_emo_score' style="margin-left: 0%">
+            <img src='images/av_emo_graph.png' class="responsive-image-big">
+          </div>
+          <img src='images/av_emo_teaser.png' class="responsive-image-big" id="av_emo" style="width: 150%; height: 150%; margin-left: 30%;">
+        </div>
+        <script type="text/javascript">
+          function av_emo_cache_start() {
+            document.getElementById('av_emo_score').style.opacity = "1";
+            document.getElementById('av_emo').style.opacity = "0";
+          }
+
+          function av_emo_cache_stop() {
+            document.getElementById('av_emo_score').style.opacity = "0";
+            document.getElementById('av_emo').style.opacity = "1";
+          }
+          av_emo_cache_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="TODO">
+          <span class="papertitle">AV-EMO-Reasoning: Benchmarking Emotional Reasoning Capabilities in Omni-modal LLMS with Audio-visual Cues</span>
+        </a>
+        <br>
+        Krish Patel*,
+				Dingkun Zhou*,
+        Ajay Kankipati,
+        Akshaj Gupta,
+        Zeyi Austin Li,
+        Mohul Shukla,
+        Vibhor Narang,
+        Sara Kofman,
+        Zongli Ye,
+        Grace Wang,
+        Xiaoyu Shi,
+        <a href="https://tinglok.netlify.app/">Tingle Li</a>,
+        <a href="https://daniellin94144.github.io/">Guan-Ting Lin</a>,
+        <a href="https://iftrush.github.io/"><b>Kan Jen Cheng</b></a>,
+        <a href="https://hcchou.wixsite.com/huangchengchou">Huang-Cheng Chou</a>,
+        <a href="https://jlian2.github.io/">Jiachen Lian</a>,
+        <a href="https://people.eecs.berkeley.edu/~gopala/">Gopala Anumanchipalli</a>
+        <br>
+          <em>ICASSP</em>, under review &nbsp <font color="red"></font>
+        <br>
+        <a href="TODO">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2510.07355">arXiv</a>
+        <p></p>
+        <p>
+          A holistic benchmark for assessing emotional coherence in omni-modal LLMs through continuous, categorical, and perceptual metrics.</p>
+      </td>
+    </tr>
+
+
+
+
+
+
+
+    <tr onmouseout="emo_cache_stop()" onmouseover="emo_cache_start()">
+      <td style="padding:20px;width:45%;margin: auto;text-align: center;">
+        <div class="one" style="margin-left: 0%;">
+          <div class="two" id='emo_score' style="margin-left: 0%">
+            <img src='images/emo_score.png' class="responsive-image-big">
+          </div>
+          <img src='images/emo_reason_teaser.png' class="responsive-image-big" id="emo">
+        </div>
+        <script type="text/javascript">
+          function emo_cache_start() {
+            document.getElementById('emo_score').style.opacity = "1";
+            document.getElementById('emo').style.opacity = "0";
+          }
+
+          function emo_cache_stop() {
+            document.getElementById('emo_score').style.opacity = "0";
+            document.getElementById('emo').style.opacity = "1";
+          }
+          emo_cache_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="TODO">
           <span class="papertitle">EMO-Reasoning: Benchmarking Emotional Reasoning Capabilities in Spoken Dialogue Systems</span>
         </a>
         <br>
         Jingwen Liu*,
-				<a href="https://iftrush.github.io/">Kan Jen Cheng*</a>,
+				<a href="https://iftrush.github.io/"><b>Kan Jen Cheng*</b></a>,
         <a href="https://jlian2.github.io/">Jiachen Lian</a>,
         Akshay Anand,
         Rishi Jain,
@@ -102,14 +291,16 @@
     </tr>
 
 
+
+
     <tr onmouseout="flash_cache_stop()" onmouseover="flash_cache_start()">
       <td style="padding:20px;width:45%;margin: auto;text-align: center;">
         <div class="one" style="margin-left: 0;">
-          <div class="two" id='flash_cache_image'><video  width=150% muted autoplay loop class="responsive-image">
+          <div class="two" id='flash_cache_image' style="margin-left: 30%"><video  width=150% muted autoplay loop class="responsive-image">
           <source src="images/audio_texture_editing.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video></div>
-          <img src='images/audio_texture_editing_fix.png' class="responsive-image-big" id="ate" style="margin-top: 40px">
+          <img src='images/audio_texture_editing_fix.png' class="responsive-image-big" id="ate" style="margin-top: 20%">
         </div>
         <script type="text/javascript">
           function flash_cache_start() {
@@ -129,7 +320,7 @@
           <span class="papertitle">Audio Texture Manipulation by Exemplar-Based Analogy</span>
         </a>
         <br>
-				<a href="https://iftrush.github.io/">Kan Jen Cheng*</a>,
+				<a href="https://iftrush.github.io/"><b>Kan Jen Cheng*</b></a>,
         <a href="https://tinglok.netlify.app/">Tingle Li*</a>,
         <a href="https://people.eecs.berkeley.edu/~gopala/">Gopala Anumanchipalli</a>
         <br>
@@ -140,7 +331,7 @@
         <a href="https://arxiv.org/abs/2501.12385">arXiv</a>
         <p></p>
         <p>
-          An exemplar-based analogy model for audio texture manipulation that uses paired speech examples to learn transformations.</p>
+          An exemplar-based analogy (in-context learning) model for audio texture manipulation that uses paired speech examples to learn transformations.</p>
       </td>
     </tr>
 
