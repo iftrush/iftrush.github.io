@@ -1,13 +1,14 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
     <title>Kan Jen Cheng</title>
     <meta name="author" content="Kan Jen Cheng">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/cwtexkai.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet.css?v=2">
     <link rel="icon" href="images/eecs_logo.jpg">
   </head>
@@ -18,7 +19,7 @@
       <!-- ===== Bio ===== -->
       <header class="bio">
         <div class="bio-content">
-          <p class="name">Kan Jen Cheng</p>
+          <p class="name">Kan Jen Cheng <span class="name-sign" lang="zh-Hant">鄭堪任</span></p>
           <p>
             I am an incoming PhD student in Computer Science at the
             University of Maryland, College Park (Fall 2026),
@@ -44,16 +45,16 @@
           </p>
           <p class="links">
             <a href="mailto:kanjencheng@berkeley.edu">Email</a> &nbsp;/&nbsp;
-            <a href="https://github.com/iftrush/">Github</a> &nbsp;/&nbsp;
+            <a href="https://github.com/iftrush/">GitHub</a> &nbsp;/&nbsp;
             <a href="https://www.linkedin.com/in/kan-jen-cheng-b34624193/">LinkedIn</a>
           </p>
         </div>
         <div class="bio-photo">
-          <img class="profile-photo" alt="profile photo" src="./images/profilepic.jpg">
+          <img class="profile-photo" alt="Kan Jen Cheng" src="images/profilepic.jpg">
         </div>
       </header>
 
-      <!-- ===== Research Philosophies & Future Directions ===== -->
+      <!-- ===== Research Philosophies ===== -->
       <section class="section">
         <h2>Research Philosophies</h2>
         <p>
@@ -63,9 +64,13 @@
           where I develop tools that offer precise, object-level control for content creation.
         </p>
 
+      </section>
+
+      <!-- ===== Future Directions ===== -->
+      <section class="section">
         <h2>Future Directions</h2>
         <p>
-          As an audio-visual researcher, I have witnessed the power of multimodal synergy, yet I
+          As an audio-visual researcher, I have witnessed the power of <b><i>multimodal synergy</i></b>, yet I
           realize that correlation alone is insufficient. True perception requires understanding the
           physical laws, such as geometry, dynamics, and material interactions, that govern the spaces
           where sight and sound coexist. Consequently, my future research will focus on spatial and
@@ -76,20 +81,20 @@
           world through a unified sensory experience.
         </p>
 
-        <h2>Research</h2>
       </section>
 
-      <!-- ===== Papers ===== -->
+      <!-- ===== Research ===== -->
       <section class="section">
+        <h2>Research</h2>
 
         <!-- Paper: CAVE -->
-        <article class="paper" data-hover-show="av_hf_score" data-hover-hide="av_hf">
+        <article class="paper">
           <div class="paper-thumbnail">
-            <div class="one">
-              <div class="two" id="av_hf_score">
-                <img src="images/av_hf_flow.png" class="responsive-image-big paper-img-cave-flow">
+            <div class="paper-media" tabindex="0" role="button" aria-label="Toggle alternate preview for CAVE" aria-pressed="false">
+              <div class="paper-media-hover">
+                <img src="images/av_hf_flow.png" alt="" class="paper-media-asset paper-media-asset--large paper-img-cave-flow">
               </div>
-              <img src="images/av_hf_teaser.png" class="responsive-image-big paper-img-cave-teaser" id="av_hf">
+              <img src="images/av_hf_teaser.png" alt="" class="paper-media-asset paper-media-asset--large paper-media-default paper-img-cave-teaser">
             </div>
           </div>
           <div class="paper-details">
@@ -125,17 +130,17 @@
         </article>
 
         <!-- Paper: EMO-Reasoning -->
-        <article class="paper" data-hover-show="emo_score" data-hover-hide="emo">
+        <article class="paper">
           <div class="paper-thumbnail">
-            <div class="one">
-              <div class="two" id="emo_score">
-                <img src="images/emo_score.png" class="responsive-image-big">
+            <div class="paper-media" tabindex="0" role="button" aria-label="Toggle alternate preview for EMO-Reasoning" aria-pressed="false">
+              <div class="paper-media-hover">
+                <img src="images/emo_score.png" alt="" class="paper-media-asset paper-media-asset--large">
               </div>
-              <img src="images/emo_reason_teaser.png" class="responsive-image-big" id="emo">
+              <img src="images/emo_reason_teaser.png" alt="" class="paper-media-asset paper-media-asset--large paper-media-default">
             </div>
           </div>
           <div class="paper-details">
-            <a href="TODO">
+            <a href="https://berkeley-speech-group.github.io/emo-reasoning/">
               <span class="papertitle">EMO-Reasoning: Benchmarking Emotional Reasoning Capabilities in Spoken Dialogue Systems</span>
             </a>
             <br>
@@ -164,16 +169,16 @@
         </article>
 
         <!-- Paper: Audio Texture Manipulation -->
-        <article class="paper" data-hover-show="flash_cache_image" data-hover-hide="ate">
+        <article class="paper">
           <div class="paper-thumbnail">
-            <div class="one">
-              <div class="two paper-img-ate-video" id="flash_cache_image">
-                <video width="150%" muted autoplay loop class="responsive-image">
+            <div class="paper-media paper-media--video" tabindex="0" role="button" aria-label="Toggle alternate preview for Audio Texture Manipulation by Exemplar-Based Analogy" aria-pressed="false">
+              <div class="paper-media-hover paper-img-ate-video">
+                <video muted autoplay loop playsinline preload="metadata" class="paper-media-asset">
                   <source src="images/audio_texture_editing.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
               </div>
-              <img src="images/audio_texture_editing_fix.png" class="responsive-image-big paper-img-ate-teaser" id="ate">
+              <img src="images/audio_texture_editing_fix.png" alt="" class="paper-media-asset paper-media-asset--large paper-media-default paper-img-ate-teaser">
             </div>
           </div>
           <div class="paper-details">
@@ -191,8 +196,9 @@
               <a href="https://arxiv.org/abs/2501.12385">arXiv</a>
             </div>
             <p>
-              An exemplar-based analogy (in-context learning) model for audio texture manipulation
-              that uses paired speech examples to learn transformations.
+              A latent diffusion, exemplar-based analogy (In-Context Learning) model for
+              audio texture manipulation, which refers to editing the overall perceptual quality of
+              a sound and its interaction with various sound sources.
             </p>
           </div>
         </article>
