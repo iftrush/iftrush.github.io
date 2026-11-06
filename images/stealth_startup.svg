@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" viewBox="0 0 200 200" role="img" aria-labelledby="title desc">
+  <title id="title">Stealth Startup logo</title>
+  <desc id="desc">A faceted gray stealth jet inside a black circle. Redrawn as SVG from Stealthstartup.png by Christianbuechle, licensed under Creative Commons Attribution 4.0.</desc>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:title>Stealth Startup logo, SVG adaptation</dc:title>
+        <dc:creator>Christianbuechle</dc:creator>
+        <dc:source rdf:resource="https://commons.wikimedia.org/wiki/File:Stealthstartup.png"/>
+        <dc:description>Adapted by redrawing the raster artwork as vector polygons.</dc:description>
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <circle cx="100" cy="100" r="100" fill="#000"/>
+  <path d="M100 35 169 132 157 150 126 127 100 142 74 127 43 150 31 132Z" fill="#555"/>
+  <path d="M74 72 74 127 43 150 31 132Z" fill="#686868"/>
+  <path d="M100 76 126 127 100 142 74 127Z" fill="#858585"/>
+  <path d="M88 52 100 76 74 127 74 72Z" fill="#969696"/>
+  <path d="M112 52 126 72 126 127 100 76Z" fill="#707070"/>
+  <path d="M100 35 112 52 100 76 88 52Z" fill="#808080"/>
+</svg>
